@@ -491,6 +491,36 @@ pre code {
   background-color: transparent;
 }
 
+/* Override table styles for syntax highlighting */
+.chroma table {
+  background: transparent;
+  margin: 0;
+  border: none;
+}
+
+.chroma td,
+.chroma th {
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+.chroma tbody tr {
+  border: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .chroma table {
+    background: transparent;
+  }
+  
+  .chroma td,
+  .chroma th {
+    background: transparent;
+    color: inherit;
+  }
+}
+
 /* Base colors - Monokai */
 .chroma .k { color: #f92672; font-weight: bold; } /* Keyword - Pink */
 .chroma .kt { color: #f92672; } /* KeywordType */
