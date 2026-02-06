@@ -133,7 +133,7 @@ tags: ["tag1", "tag2"]
 categories: ["category1"]
 image: "/images/post-image.webp"
 syndication:
-  - https://twitter.com/username/status/123456789
+  - https://bsky.app/profile/username/post/123456789
 ---
 ```
 
