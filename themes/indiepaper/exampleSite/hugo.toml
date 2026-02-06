@@ -1,4 +1,4 @@
-baseURL = 'https://example.com/'
+baseURL = 'https://indiepaper.netlify.app/'
 languageCode = 'en-us'
 title = 'Indiepaper'
 theme = 'indiepaper'
@@ -12,7 +12,7 @@ enableRobotsTXT = true
   [params.author]
     name = "Brennan Brown"
     email = "contact@example.com"
-    url = "https://example.com"
+    url = "https://indiepaper.netlify.app"
     bio = "Writer, developer, and advocate for the small web."
     photo = "/photo.jpg"
   
@@ -27,9 +27,9 @@ enableRobotsTXT = true
   [params.indieweb]
     token_endpoint = "https://tokens.indieauth.com/token"
     authorization_endpoint = "https://indieauth.com/auth"
-    micropub_endpoint = "https://example.com/micropub"
+    micropub_endpoint = "https://indiepaper.netlify.app/micropub"
     microsub_endpoint = "https://aperture.p3k.io/microsub/123"
-    webmention_endpoint = "https://webmention.io/example/webmention"
+    webmention_endpoint = "https://webmention.io/indiepaper.netlify.app/webmention"
     webmention_api = "https://webmention.io/api/mentions.jf2"
   
   [[params.social]]
@@ -39,8 +39,8 @@ enableRobotsTXT = true
     name = "GitHub"
     url = "https://github.com/username"
   [[params.social]]
-    name = "Twitter"
-    url = "https://twitter.com/username"
+    name = "Bluesky"
+    url = "https://bsky.app/profile/username"
 
 [taxonomies]
   tag = "tags"

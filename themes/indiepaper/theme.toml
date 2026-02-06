@@ -3,7 +3,7 @@ license = "MIT"
 licenselink = "https://github.com/brennanbrown/indiepaper/blob/main/LICENSE"
 description = "A brutalist, smolweb-compliant, accessibility-first, indieweb-native Hugo theme"
 homepage = "https://github.com/brennanbrown/indiepaper"
-demosite = "https://indiepaper.example.com"
+demosite = "https://indiepaper.netlify.app"
 tags = ["blog", "minimal", "responsive", "accessible", "indieweb", "microformats", "brutalist"]
 features = ["accessibility", "indieweb", "microformats2", "semantic-html5", "wcag-aa"]
 
