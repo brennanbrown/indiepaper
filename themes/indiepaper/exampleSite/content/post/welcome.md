@@ -81,6 +81,4 @@ Indiepaper is built with accessibility in mind:
 - Screen reader friendly
 - 4.5:1 contrast ratios for text
 
----
-
 This is just a sample of what's possible with Indiepaper. The theme stays out of your way so you can focus on what matters most: your content.
