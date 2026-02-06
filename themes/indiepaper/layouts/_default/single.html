@@ -79,7 +79,7 @@
     </footer>
   </article>
   
-  {{ if not (eq .Type "notes") }}
+  {{ if and (not (eq .Type "notes")) (not (eq .Kind "page")) }}
   <nav class="pagination">
     {{ with .PrevInSection }}
     <a href="{{ .Permalink }}" rel="prev">← {{ .Title }}</a>
