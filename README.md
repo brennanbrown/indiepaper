@@ -2,6 +2,8 @@
 
 A monochrome, brutalist Medium-inspired Hugo blog theme that prioritizes smolweb compliance, accessibility, and IndieWeb principles.
 
+![Indiepaper Theme Screenshot](themes/indiepaper/static/screenshot.jpg)
+
 ## Philosophy
 
 Indiepaper embodies the brutalist web design movement with a focus on:
