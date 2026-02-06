@@ -607,7 +607,7 @@ data {
 **In post front matter:**
 ```yaml
 syndication:
-  - https://twitter.com/username/status/123456789
+  - https://bsky.app/profile/username/post/123456789
   - https://mastodon.social/@username/123456789
 ```
 
@@ -718,16 +718,16 @@ syndication:
 <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.image }}">
 {{ end }}
 
-<!-- Twitter -->
-<meta property="twitter:card" content="summary{{ if .Params.image }}_large_image{{ end }}">
-<meta property="twitter:url" content="{{ .Permalink }}">
-<meta property="twitter:title" content="{{ .Title }}">
-<meta property="twitter:description" content="{{ .Description | default .Summary | default .Site.Params.description }}">
-{{ if .Site.Params.author.twitter }}
-<meta property="twitter:creator" content="@{{ .Site.Params.author.twitter }}">
+<!-- Bluesky -->
+<meta property="bluesky:card" content="summary{{ if .Params.image }}_large_image{{ end }}">
+<meta property="bluesky:url" content="{{ .Permalink }}">
+<meta property="bluesky:title" content="{{ .Title }}">
+<meta property="bluesky:description" content="{{ .Description | default .Summary | default .Site.Params.description }}">
+{{ if .Site.Params.author.bluesky }}
+<meta property="bluesky:creator" content="@{{ .Site.Params.author.bluesky }}">
 {{ end }}
 {{ if .Params.image }}
-<meta property="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.image }}">
+<meta property="bluesky:image" content="{{ .Site.BaseURL }}{{ .Params.image }}">
 {{ end }}
 
 <!-- Article Metadata (for blog posts) -->
@@ -948,7 +948,7 @@ paginate = 10
     email = "mail@brennanbrown.ca"
     url = "https://brennanbrown.ca"
     bio = "Writer, developer, and advocate for the small web."
-    twitter = "brennanbrown"  # Optional
+    bluesky = "brennanbrown"  # Optional
   
   # Location (optional, for SEO)
   [params.location]
@@ -1015,7 +1015,7 @@ summary: "Exploring the principles of brutalist design on the modern web."
 description: "A deep dive into brutalist web design principles and their relevance to the smolweb movement."
 image: "/images/brutalist-design.png"  # Optional
 syndication:  # Optional, for POSSE
-  - https://twitter.com/brennanbrown/status/123456789
+  - https://bsky.app/profile/brennanbrown/post/123456789
   - https://mastodon.social/@brennanbrown/123456789
 ---
 ```
@@ -1198,7 +1198,7 @@ add_header Content-Security-Policy "default-src 'self'; script-src 'self' 'unsaf
 - [ ] sitemap.xml generated
 - [ ] Canonical URLs set
 - [ ] Open Graph tags present
-- [ ] Twitter Cards configured
+- [ ] Bluesky Cards configured
 - [ ] Structured data valid (Google Rich Results Test)
 
 **Cross-Browser:**

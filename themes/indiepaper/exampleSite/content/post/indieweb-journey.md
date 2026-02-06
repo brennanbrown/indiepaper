@@ -10,7 +10,7 @@ description: "A personal story about transitioning from social media platforms t
 
 ## The Beginning
 
-For years, I was just another consumer of the web. I posted on Twitter, shared on Instagram, and wrote on Medium. My content lived on platforms I didn't control, subject to algorithms I couldn't understand.
+For years, I was just another consumer of the web. I posted on Bluesky, shared on Instagram, and wrote on Medium. My content lived on platforms I didn't control, subject to algorithms I couldn't understand.
 
 Then I discovered the IndieWeb.
 

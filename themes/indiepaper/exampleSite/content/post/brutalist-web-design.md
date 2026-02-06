@@ -10,7 +10,7 @@ description: "A deep dive into brutalist web design principles and their relevan
 image: "/images/brutalist-design.webp"
 syndication:
   - https://mastodon.social/@username/123456789
-  - https://twitter.com/username/status/123456789
+  - https://bsky.app/profile/username/post/123456789
 ---
 
 > *"In a world of infinite scroll and infinite choice, brutalism offers a way out."*
