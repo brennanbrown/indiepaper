@@ -1,0 +1,16 @@
+<figure>
+  {{ if .Get "link" }}
+  <a href="{{ .Get "link" }}">
+  {{ end }}
+    <img src="{{ .Get "src" }}" 
+         alt="{{ .Get "alt" }}" 
+         {{ with .Get "width" }}width="{{ . }}"{{ end }}
+         {{ with .Get "height" }}height="{{ . }}"{{ end }}
+         loading="lazy">
+  {{ if .Get "link" }}
+  </a>
+  {{ end }}
+  {{ with .Get "caption" }}
+  <figcaption>{{ . }}</figcaption>
+  {{ end }}
+</figure>
