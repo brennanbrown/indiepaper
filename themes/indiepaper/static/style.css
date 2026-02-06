@@ -316,13 +316,13 @@ article h1 {
 .post-excerpt {
   color: var(--color-meta);
   font-style: italic;
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--spacing-lg);
 }
 
 /* Post list styling */
 .h-entry {
-  margin-bottom: var(--spacing-xl);
-  padding-bottom: var(--spacing-xl);
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
   border-bottom: 1px solid rgba(128, 128, 128, 0.1);
 }
 
