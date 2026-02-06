@@ -306,12 +306,6 @@ article h1 {
   margin-bottom: var(--spacing-lg);
 }
 
-@media (prefers-color-scheme: dark) {
-  .post-excerpt {
-    color: var(--color-medium-grey);
-  }
-}
-
 .post-meta time {
   font-family: var(--font-mono);
 }
