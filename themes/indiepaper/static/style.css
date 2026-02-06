@@ -382,14 +382,29 @@ ul input[type="checkbox"] {
 /* Figure */
 figure {
   margin: var(--spacing-lg) 0;
+  text-align: center;
 }
 
-figcaption {
+figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+figure figcaption {
   font-size: 0.875rem;
   color: var(--color-meta);
   font-style: italic;
-  margin-top: 0.5rem;
-  text-align: center;
+  margin-top: var(--spacing-sm);
+}
+
+/* Lighthouse Screenshot */
+.lighthouse-screenshot {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: var(--spacing-lg) 0 var(--spacing-xl) 0;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Table */
