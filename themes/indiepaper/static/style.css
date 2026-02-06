@@ -515,6 +515,43 @@ pre code {
   border: none;
 }
 
+/* Line numbers */
+.chroma .lnt {
+  color: #7f7f7f;
+  padding: 0 1em;
+  border-right: 1px solid #444;
+  margin-right: 0.5em;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.chroma .ln {
+  color: #7f7f7f;
+  padding: 0 1em;
+  border-right: 1px solid #444;
+  margin-right: 0.5em;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.chroma .hl {
+  background-color: #333;
+  display: block;
+  width: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  .chroma .lnt,
+  .chroma .ln {
+    color: #666;
+    border-right-color: #555;
+  }
+  
+  .chroma .hl {
+    background-color: #444;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   .chroma table {
     background: transparent;
