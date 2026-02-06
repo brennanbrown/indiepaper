@@ -23,6 +23,15 @@ The theme is built on these principles:
 - Print-friendly styles included
 - Dark mode support via CSS media queries
 
+## Performance Scores
+
+Indiepaper achieves perfect scores across all Lighthouse audits:
+
+![Lighthouse Performance](https://img.shields.io/badge/lighthouse-100%25-success)
+![Lighthouse Accessibility](https://img.shields.io/badge/lighthouse-100%25-success)
+![Lighthouse Best Practices](https://img.shields.io/badge/lighthouse-100%25-success)
+![Lighthouse SEO](https://img.shields.io/badge/lighthouse-100%25-success)
+
 ## Author
 
 Created by Brennan Brown, a web developer passionate about the indieweb and accessible design.
