@@ -1,8 +1,6 @@
 ---
-title: "About"
+title: "About Indiepaper"
 ---
-
-# About Indiepaper
 
 Indiepaper is a Hugo theme designed for writers who value simplicity, accessibility, and ownership of their content. It draws inspiration from Medium's clean typography but implements it with a brutalist, smolweb approach.
 
