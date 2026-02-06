@@ -31,6 +31,72 @@ Indiepaper achieves perfect scores across all Lighthouse audits:
   <img src="/lighthouse.jpg" alt="Lighthouse Performance Scores - 100% across all categories" class="lighthouse-screenshot">
 </a>
 
+## How to Use Indiepaper
+
+### Option 1: Hugo Module (Recommended)
+
+```bash
+# In your Hugo site directory
+hugo mod init github.com/yourusername/yoursite
+hugo mod get github.com/brennanbrown/indiepaper
+```
+
+Add to your `hugo.toml`:
+```toml
+[module]
+  [[module.imports]]
+    path = "github.com/brennanbrown/indiepaper"
+```
+
+### Option 2: Git Submodule
+
+```bash
+# In your Hugo site directory
+git submodule add https://github.com/brennanbrown/indiepaper themes/indiepaper
+```
+
+Add to your `hugo.toml`:
+```toml
+theme = "indiepaper"
+```
+
+### Option 3: Direct Download
+
+<a href="/indiepaper-theme.zip" download class="download-link">
+  📦 Download Indiepaper Theme (.zip)
+</a>
+
+Extract the zip to your `themes/` directory and add `theme = "indiepaper"` to your `hugo.toml`.
+
+### Configuration
+
+Basic configuration in `hugo.toml`:
+```toml
+[params]
+  description = "Your site description"
+  motto = "Your site motto"
+  
+  [params.author]
+    name = "Your Name"
+    email = "your@email.com"
+    url = "https://yoursite.com"
+    bio = "Your bio"
+```
+
+### Content Structure
+
+Create content in `content/post/` with front matter:
+```yaml
+---
+title: "Your Post Title"
+date: 2026-01-01T00:00:00-07:00
+draft: false
+summary: "Brief description"
+tags: ["tag1", "tag2"]
+categories: ["category1"]
+---
+```
+
 ## Author
 
 Created by Brennan Brown, a web developer passionate about the indieweb and accessible design.
