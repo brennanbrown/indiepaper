@@ -3,17 +3,17 @@ name: Deploy Demo Site to Netlify
 on:
   push:
     branches: [ main ]
-    paths: [ 'indiepaper-demo/**' ]
+    paths: [ 'themes/indiepaper/exampleSite/**' ]
   pull_request:
     branches: [ main ]
-    paths: [ 'indiepaper-demo/**' ]
+    paths: [ 'themes/indiepaper/exampleSite/**' ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./indiepaper-demo
+        working-directory: ./themes/indiepaper/exampleSite
     steps:
     - name: Checkout
       uses: actions/checkout@v4
@@ -33,7 +33,7 @@ jobs:
     - name: Deploy to Netlify
       uses: nwtgck/actions-netlify@v3
       with:
-        publish-dir: './indiepaper-demo/public'
+        publish-dir: './themes/indiepaper/exampleSite/public'
         github-token: ${{ secrets.GITHUB_TOKEN }}
         deploy-message: "Deploy from GitHub Actions"
         enable-pull-request-comment: true
