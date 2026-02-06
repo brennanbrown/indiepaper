@@ -27,10 +27,10 @@ The theme is built on these principles:
 
 Indiepaper achieves perfect scores across all Lighthouse audits:
 
-![Lighthouse Performance](https://img.shields.io/badge/lighthouse-100%25-success)
-![Lighthouse Accessibility](https://img.shields.io/badge/lighthouse-100%25-success)
-![Lighthouse Best Practices](https://img.shields.io/badge/lighthouse-100%25-success)
-![Lighthouse SEO](https://img.shields.io/badge/lighthouse-100%25-success)
+<img src="https://img.shields.io/badge/lighthouse-100%25-success" alt="Lighthouse Performance">
+<img src="https://img.shields.io/badge/lighthouse-100%25-success" alt="Lighthouse Accessibility">
+<img src="https://img.shields.io/badge/lighthouse-100%25-success" alt="Lighthouse Best Practices">
+<img src="https://img.shields.io/badge/lighthouse-100%25-success" alt="Lighthouse SEO">
 
 ## Author
 
