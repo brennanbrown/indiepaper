@@ -2,17 +2,27 @@ baseURL = 'https://example.com/'
 languageCode = 'en-us'
 title = 'Indiepaper'
 theme = 'indiepaper'
+enableRobotsTXT = true
 
 [params]
   description = "A brutalist, smolweb-compliant, accessibility-first, indieweb-native Hugo theme"
-  email = "contact@example.com"
   motto = "Write. Publish. Own your content."
-  url = "https://example.com"
-  photo = "/photo.jpg"
+  mainSections = ["post"]
   
   [params.author]
     name = "Brennan Brown"
-    twitter = "brennanbrown"
+    email = "contact@example.com"
+    url = "https://example.com"
+    bio = "Writer, developer, and advocate for the small web."
+    photo = "/photo.jpg"
+  
+  [params.location]
+    region = "CA-AB"
+    placename = "Grande Prairie, Alberta"
+  
+  [params.support]
+    url = "https://ko-fi.com/brennanbrown"
+    text = "Buy me a coffee"
   
   [params.indieweb]
     token_endpoint = "https://tokens.indieauth.com/token"
