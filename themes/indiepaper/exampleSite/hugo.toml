@@ -52,8 +52,9 @@ enableRobotsTXT = true
 
 [markup]
   [markup.highlight]
-    style = "github"
+    style = "monokai"
     lineNos = true
+    noClasses = false
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
