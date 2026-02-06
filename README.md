@@ -265,3 +265,13 @@ Contributions are welcome! Please read the [specification](docs/spec-sheet.md) f
 ---
 
 **Indiepaper** - Write. Publish. Own your content.
+
+---
+
+🍓 **Berry House**
+
+Indiepaper was created by Berry House - we build fast, accessible JAMstack websites and help independent creators, non-profits, and small teams communicate clearly and own their platform.
+
+Whether you're looking to amplify your writing or build an independent website, we're here to help you create and share meaningful work with the world.
+
+[Learn more about Berry House →](https://berryhouse.ca)
