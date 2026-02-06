@@ -14,7 +14,7 @@ enableRobotsTXT = true
     email = "contact@example.com"
     url = "https://indiepaper.netlify.app"
     bio = "Writer, developer, and advocate for the small web."
-    photo = "/photo.jpg"
+    photo = "https://picsum.photos/200/200"
   
   [params.location]
     region = "CA-AB"

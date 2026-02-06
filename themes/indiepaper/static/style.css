@@ -301,9 +301,15 @@ article h1 {
 }
 
 .post-excerpt {
-  color: #999999;
+  color: var(--color-meta);
   font-style: italic;
   margin-bottom: var(--spacing-lg);
+}
+
+@media (prefers-color-scheme: dark) {
+  .post-excerpt {
+    color: var(--color-medium-grey);
+  }
 }
 
 .post-meta time {
