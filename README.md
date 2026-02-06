@@ -1,8 +1,8 @@
 # Indiepaper Hugo Theme
 
-📰 A monochrome, brutalist Medium-inspired Hugo blog theme that prioritizes smolweb compliance, accessibility, and IndieWeb principles.
+A monochrome, brutalist Medium-inspired Hugo blog theme that prioritizes smolweb compliance, accessibility, and IndieWeb principles.
 
-## 🎯 Philosophy
+## Philosophy
 
 Indiepaper embodies the brutalist web design movement with a focus on:
 - **Smolweb compliant**: Minimal, semantic HTML with efficient CSS
@@ -11,18 +11,18 @@ Indiepaper embodies the brutalist web design movement with a focus on:
 - **Typography focused**: Strong, beautiful type hierarchy despite minimalism
 - **Performance optimized**: Fast loading, minimal compute, works everywhere
 
-## ✨ Features
+## Features
 
-- 🎨 **Monochrome Design**: Pure black and white aesthetic with no embedded fonts
-- 📱 **Responsive**: Single column naturally adapts to all screen sizes
-- ♿ **Accessible**: WCAG 2.1 AA compliant with proper ARIA landmarks
-- 🌐 **IndieWeb Ready**: Complete microformats2 support (h-card, h-entry, h-feed)
-- 🔗 **Webmentions**: Built-in support for webmention.io integration
-- 📡 **Multiple Feeds**: RSS, JSON, and Atom feed support
-- 🖨️ **Print Optimized**: Clean print styles with proper page breaks
-- ⚡ **Fast**: Single CSS file, no JavaScript required for core functionality
+- **Monochrome Design**: Pure black and white aesthetic with no embedded fonts
+- **Responsive**: Single column naturally adapts to all screen sizes
+- **Accessible**: WCAG 2.1 AA compliant with proper ARIA landmarks
+- **IndieWeb Ready**: Complete microformats2 support (h-card, h-entry, h-feed)
+- **Webmentions**: Built-in support for webmention.io integration
+- **Multiple Feeds**: RSS, JSON, and Atom feed support
+- **Print Optimized**: Clean print styles with proper page breaks
+- **Fast**: Single CSS file, no JavaScript required for core functionality
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Installation
 
@@ -84,13 +84,13 @@ theme = "indiepaper"
 hugo server -D
 ```
 
-## 📖 Documentation
+## Documentation
 
 - [Complete Specification Sheet](docs/spec-sheet.md) - Detailed design requirements
 - [Demo Site](https://indiepaper.netlify.app) - See the theme in action
 - [Configuration Guide](#configuration) - Full customization options
 
-## ⚙️ Configuration
+## Configuration
 
 ### Basic Setup
 
@@ -150,7 +150,7 @@ Use the provided shortcode for smolweb-compliant images:
         link="/images/photo-full.webp" >}}
 ```
 
-## 🌐 IndieWeb Features
+## IndieWeb Features
 
 ### Microformats2
 - **h-card**: Author/site identity in header
@@ -164,7 +164,7 @@ Configure webmention.io to receive responses from across the web. The theme auto
 ### POSSE Support
 Add `syndication` links to your front matter to publish on multiple platforms while owning your content.
 
-## 🎨 Design System
+## Design System
 
 ### Typography
 - **Headers**: Geometric humanist sans-serif (Avenir, Montserrat, Corbel)
@@ -186,7 +186,7 @@ Pure monochrome palette:
 - Generous line height for readability
 - No responsive CSS needed (natural mobile adaptation)
 
-## ♿ Accessibility
+## Accessibility
 
 - WCAG 2.1 AA compliant
 - Semantic HTML5 structure
@@ -196,7 +196,7 @@ Pure monochrome palette:
 - Screen reader friendly
 - 4.5:1 contrast ratios for text
 
-## 📱 Development
+## Development
 
 ### File Structure
 ```
@@ -238,15 +238,15 @@ Tests include:
 - Feed validation
 - Accessibility testing
 
-## 📄 License
+## License
 
 MIT License - see [LICENSE](LICENSE) for details.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please read the [specification](docs/spec-sheet.md) for design principles and requirements.
 
-## 🔗 Resources
+## Resources
 
 - [Specification Sheet](docs/spec-sheet.md) - Complete design requirements
 - [IndieWeb](https://indieweb.org/) - Decentralized web protocols
