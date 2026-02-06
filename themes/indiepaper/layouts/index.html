@@ -1,0 +1,42 @@
+{{ define "main" }}
+<div class="container">
+  <section class="h-feed">
+    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" site.Params.mainSections) }}
+    {{ range $index, $page := $paginator.Pages }}
+      <article class="h-entry">
+        <h2><a href="{{ .Permalink }}" class="u-url p-name">{{ .Title }}</a></h2>
+        
+        <div class="post-meta">
+          <time datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}" class="dt-published">{{ .Date.Format "January 2, 2006" }}</time>
+          {{ if .Params.updated }}
+          {{ $updated := .Params.updated | time.AsTime }}
+          <span class="meta-separator"> </span>
+          <time datetime="{{ $updated.Format "2006-01-02T15:04:05-07:00" }}" class="dt-updated meta">(updated {{ $updated.Format "January 2, 2006" }})</time>
+          {{ end }}
+          <span class="meta-separator"> </span>
+          <data value="{{ .WordCount }}">{{ .WordCount }} words</data>
+          {{ with .Params.readingTime }}
+          <span class="meta-separator"> </span>
+          <data value="{{ . }}">{{ . }} min read</data>
+          {{ end }}
+          {{ if .Params.tags }}
+          <div class="tags">
+            {{ range .Params.tags }}
+            <a href="/tags/{{ . | urlize }}" class="tag p-category">#{{ . }}</a>
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
+        
+        {{ if .Description }}
+        <p class="p-summary post-excerpt">{{ .Description }}</p>
+        {{ else if .Summary }}
+        <p class="p-summary post-excerpt">{{ .Summary }}</p>
+        {{ end }}
+      </article>
+    {{ end }}
+  </section>
+  
+  {{ template "_internal/pagination.html" . }}
+</div>
+{{ end }}

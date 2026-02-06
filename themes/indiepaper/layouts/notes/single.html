@@ -1,0 +1,43 @@
+{{ define "main" }}
+<div class="container">
+  <article class="h-entry note">
+    <div class="note-content e-content">
+      {{ .Content }}
+    </div>
+    
+    <footer class="note-meta">
+      <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" class="dt-published">
+        <a href="{{ .Permalink }}" class="u-url">{{ .Date.Format "3:04 PM · Jan 2, 2006" }}</a>
+      </time>
+      {{ if .Params.updated }}
+      {{ $updated := .Params.updated | time.AsTime }}
+      <time datetime="{{ $updated.Format "2006-01-02T15:04:05Z07:00" }}" class="dt-updated meta">(updated {{ $updated.Format "3:04 PM · Jan 2, 2006" }})</time>
+      {{ end }}
+      
+      {{ if .Params.tags }}
+      <div class="tags">
+        {{ range .Params.tags }}
+        <a href="/tags/{{ . | urlize }}" class="tag p-category">#{{ . }}</a>
+        {{ end }}
+      </div>
+      {{ end }}
+      
+      {{ if or .Params.inReplyTo .Params.likeOf .Params.repostOf }}
+      <div class="context">
+        {{ if .Params.inReplyTo }}
+        <span class="meta">In reply to: <a href="{{ .Params.inReplyTo }}" class="u-in-reply-to">{{ .Params.inReplyTo }}</a></span>
+        {{ end }}
+        {{ if .Params.likeOf }}
+        <span class="meta">Like of: <a href="{{ .Params.likeOf }}" class="u-like-of">{{ .Params.likeOf }}</a></span>
+        {{ end }}
+        {{ if .Params.repostOf }}
+        <span class="meta">Repost of: <a href="{{ .Params.repostOf }}" class="u-repost-of">{{ .Params.repostOf }}</a></span>
+        {{ end }}
+      </div>
+      {{ end }}
+    </footer>
+  </article>
+  
+  {{ partial "webmentions.html" . }}
+</div>
+{{ end }}
