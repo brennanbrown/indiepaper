@@ -1,0 +1,64 @@
+baseURL = 'https://example.com/'
+languageCode = 'en-us'
+title = 'Indiepaper'
+theme = 'indiepaper'
+
+[params]
+  description = "A brutalist, smolweb-compliant, accessibility-first, indieweb-native Hugo theme"
+  email = "contact@example.com"
+  motto = "Write. Publish. Own your content."
+  url = "https://example.com"
+  photo = "/photo.jpg"
+  
+  [params.author]
+    name = "Brennan Brown"
+    twitter = "brennanbrown"
+  
+  [params.indieweb]
+    token_endpoint = "https://tokens.indieauth.com/token"
+    authorization_endpoint = "https://indieauth.com/auth"
+    micropub_endpoint = "https://example.com/micropub"
+    microsub_endpoint = "https://aperture.p3k.io/microsub/123"
+    webmention_endpoint = "https://webmention.io/example/webmention"
+    webmention_api = "https://webmention.io/api/mentions.jf2"
+  
+  [[params.social]]
+    name = "Mastodon"
+    url = "https://mastodon.social/@username"
+  [[params.social]]
+    name = "GitHub"
+    url = "https://github.com/username"
+  [[params.social]]
+    name = "Twitter"
+    url = "https://twitter.com/username"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[permalinks]
+  post = "/:slug"
+  notes = "/notes/:slug"
+
+[markup]
+  [markup.highlight]
+    style = "github"
+    lineNos = true
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  term = ["HTML", "RSS"]
+
+[outputFormats]
+  [outputFormats.RSS]
+    mediatype = "application/rss+xml"
+    baseName = "feed"
+  [outputFormats.JSON]
+    mediatype = "application/json"
+    baseName = "feed"
