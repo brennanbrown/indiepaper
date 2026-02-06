@@ -2,7 +2,7 @@
 
 A monochrome, brutalist Medium-inspired Hugo blog theme that prioritizes smolweb compliance, accessibility, and IndieWeb principles.
 
-![Indiepaper Theme Screenshot](themes/indiepaper/static/screenshot.jpg)
+![Indiepaper Theme Screenshot](static/screenshot.jpg)
 
 ## Philosophy
 
@@ -209,7 +209,7 @@ Pure monochrome palette:
 
 ### File Structure
 ```
-themes/indiepaper/
+indiepaper/
 ├── layouts/
 │   ├── _default/
 │   │   ├── baseof.html      # Base template
@@ -235,7 +235,7 @@ themes/indiepaper/
 The theme includes npm-based testing:
 
 ```bash
-cd themes/indiepaper/exampleSite
+cd exampleSite
 npm install
 npm test
 ```
@@ -270,7 +270,7 @@ Contributions are welcome! Please read the [specification](docs/spec-sheet.md) f
 
 🍓 **Berry House**
 
-Indiepaper was created by Berry House - we build fast, accessible JAMstack websites and help independent creators, non-profits, and small teams communicate clearly and own their platform.
+Indiepaper was created by Berry House. We build fast, accessible JAMstack websites and help independent creators, non-profits, and small teams communicate clearly and own their platform.
 
 Whether you're looking to amplify your writing or build an independent website, we're here to help you create and share meaningful work with the world.
 
