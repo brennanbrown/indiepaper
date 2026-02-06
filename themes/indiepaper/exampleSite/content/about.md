@@ -99,4 +99,4 @@ categories: ["category1"]
 
 ## Author
 
-Created by Brennan Brown, a web developer passionate about the indieweb and accessible design.
+Created by [Brennan Brown](https://brennan.day), a web developer passionate about the indieweb and accessible design.
