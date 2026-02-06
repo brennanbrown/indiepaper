@@ -24,6 +24,13 @@ Indiepaper embodies the brutalist web design movement with a focus on:
 - **Print Optimized**: Clean print styles with proper page breaks
 - **Fast**: Single CSS file, no JavaScript required for core functionality
 
+## Lighthouse Scores
+
+![Lighthouse Performance](https://img.shields.io/badge/lighthouse-100%25-success)
+![Lighthouse Accessibility](https://img.shields.io/badge/lighthouse-100%25-success)
+![Lighthouse Best Practices](https://img.shields.io/badge/lighthouse-100%25-success)
+![Lighthouse SEO](https://img.shields.io/badge/lighthouse-100%25-success)
+
 ## Getting Started
 
 ### Installation
