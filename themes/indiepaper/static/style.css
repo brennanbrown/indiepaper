@@ -599,7 +599,6 @@ footer p {
 .webmentions {
   margin-top: var(--spacing-xl);
   padding-top: var(--spacing-lg);
-  border-top: 1px solid var(--color-border);
 }
 
 .webmention {
