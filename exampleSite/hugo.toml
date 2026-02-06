@@ -1,8 +1,11 @@
 baseURL = 'https://indiepaper.netlify.app/'
 languageCode = 'en-us'
 title = 'Indiepaper'
-theme = 'indiepaper'
 enableRobotsTXT = true
+
+[module]
+  [[module.imports]]
+    path = "github.com/brennanbrown/indiepaper"
 
 [params]
   description = "A brutalist, smolweb-compliant, accessibility-first, indieweb-native Hugo theme"

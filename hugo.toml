@@ -7,6 +7,10 @@ demosite = "https://indiepaper.netlify.app"
 tags = ["blog", "minimal", "responsive", "accessible", "indieweb", "microformats", "brutalist"]
 features = ["accessibility", "indieweb", "microformats2", "semantic-html5", "wcag-aa"]
 
+[module]
+  [module.hugoVersion]
+    min = "0.112.0"
+
 [author]
   name = "Brennan Brown"
   homepage = "https://berryhouse.ca"
