@@ -7,6 +7,34 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-02-05
+
+### Added
+- Complete favicon set with proper web manifest configuration
+- Rich demo content with 5 migrated blog posts covering IndieWeb topics
+- Netlify deployment configuration with optimized headers and caching
+
+### Changed
+- Migrated from Twitter to Bluesky throughout theme and documentation
+- Updated all URLs from example.com to indiepaper.netlify.app
+- Redesigned footer for more compact, professional layout
+- Consolidated demo site to use standard Hugo exampleSite structure
+- Removed emojis from README for professional appearance
+- Updated social links and syndication examples to use Bluesky
+
+### Fixed
+- Code block contrast issues in dark mode (proper text color inheritance)
+- Duplicate horizontal lines in webmentions section
+- Removed HR elements from content that caused visual duplication
+- Cleaned up duplicate CSS styles for better maintainability
+- Fixed YAML front matter in migrated posts for theme compatibility
+
+### Improved
+- Better content organization with proper categories (essays, guides, journal)
+- Enhanced favicon support for all platforms and devices
+- Optimized Netlify configuration with security headers and caching rules
+- Streamlined project structure by removing redundant indiepaper-demo directory
+
 ## [1.0.0] - 2026-02-05
 
 ### Added
