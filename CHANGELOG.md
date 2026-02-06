@@ -7,6 +7,36 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-02-05
+
+### Added
+- Theme usage instructions with 3 installation methods
+- Direct download link for theme zip file (415KB)
+- Lighthouse performance screenshot with PageSpeed link
+- Theme attribution in footer linking to Berry House
+- Download button styling for better UX
+
+### Changed
+- Improved visual hierarchy with larger site title (2.5rem)
+- Enhanced vertical rhythm between posts with subtle dividers
+- Decluttered archive page by removing summaries
+- Tags now display inline with metadata using hashtags
+- Author link updated to brennan.day
+
+### Fixed
+- Syntax highlighting contrast issues in dark mode
+- Code block table styling conflicts resolved
+- Tag background colors for proper dark mode visibility
+- Git history cleanup removing large files
+- Archive page spacing optimization
+
+### Improved
+- Better post list scannability without summaries
+- Cleaner meta line with tags, date, and word count
+- Proper CSS variable usage for consistent theming
+- Streamlined theme distribution without exampleSite
+- Enhanced accessibility and WCAG compliance
+
 ## [1.1.0] - 2026-02-05
 
 ### Added
