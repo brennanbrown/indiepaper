@@ -1,0 +1,17 @@
+name = "Indiepaper"
+license = "MIT"
+licenselink = "https://github.com/brennanbrown/indiepaper/blob/main/LICENSE"
+description = "A brutalist, smolweb-compliant, accessibility-first, indieweb-native Hugo theme"
+homepage = "https://github.com/brennanbrown/indiepaper"
+demosite = "https://indiepaper.example.com"
+tags = ["blog", "minimal", "responsive", "accessible", "indieweb", "microformats", "brutalist"]
+features = ["accessibility", "indieweb", "microformats2", "semantic-html5", "wcag-aa"]
+
+[author]
+  name = "Brennan Brown"
+  homepage = "https://brennanbrown.com"
+
+[original]
+  name = "Indiepaper"
+  homepage = "https://github.com/brennanbrown/indiepaper"
+  repo = "https://github.com/brennanbrown/indiepaper"
