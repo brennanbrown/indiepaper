@@ -87,7 +87,7 @@ hugo server -D
 ## 📖 Documentation
 
 - [Complete Specification Sheet](docs/spec-sheet.md) - Detailed design requirements
-- [Demo Site](https://your-demo-url.com) - See the theme in action
+- [Demo Site](https://indiepaper.netlify.app) - See the theme in action
 - [Configuration Guide](#configuration) - Full customization options
 
 ## ⚙️ Configuration
