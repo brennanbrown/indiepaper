@@ -22,28 +22,73 @@ Indiepaper embodies the brutalist web design movement with a focus on:
 - 🖨️ **Print Optimized**: Clean print styles with proper page breaks
 - ⚡ **Fast**: Single CSS file, no JavaScript required for core functionality
 
-## 🚀 Quick Start
+## 🚀 Getting Started
 
 ### Installation
 
-1. Add the theme to your Hugo site:
-   ```bash
-   cd your-hugo-site
-   git submodule add https://github.com/brennanbrown/indiepaper.git themes/indiepaper
-   ```
+#### Option 1: Hugo Module (Recommended)
+```bash
+# In your Hugo site directory
+hugo mod init github.com/yourusername/yoursite
+hugo mod get github.com/brennanbrown/indiepaper
+```
 
-2. Configure your site in `hugo.toml`:
-   ```toml
-   theme = "indiepaper"
-   baseURL = "https://your-site.com"
-   languageCode = "en-us"
-   title = "Your Site Title"
-   ```
+Add to your `hugo.toml`:
+```toml
+[module]
+  [[module.imports]]
+    path = "github.com/brennanbrown/indiepaper"
+```
 
-3. Run Hugo:
-   ```bash
-   hugo server -D
-   ```
+#### Option 2: Git Submodule
+```bash
+cd themes
+git submodule add https://github.com/brennanbrown/indiepaper.git indiepaper
+```
+
+#### Option 3: Direct Download
+```bash
+cd themes
+git clone https://github.com/brennanbrown/indiepaper.git
+```
+
+### Configuration
+
+Add to your `hugo.toml`:
+```toml
+theme = "indiepaper"
+
+[params]
+  description = "Your site description"
+  motto = "Your site motto"
+  mainSections = ["post"]
+  
+  [params.author]
+    name = "Your Name"
+    email = "your@email.com"
+    url = "https://yourwebsite.com"
+    bio = "Your bio"
+    photo = "/your-photo.jpg"
+  
+  [params.indieweb]
+    webmention_endpoint = "https://webmention.io/yourdomain/webmention"
+    webmention_api = "https://webmention.io/api/mentions.jf2"
+    token_endpoint = "https://tokens.indieauth.com/token"
+    authorization_endpoint = "https://indieauth.com/auth"
+    micropub_endpoint = "https://yourdomain.com/micropub"
+    microsub_endpoint = "https://aperture.p3k.io/microsub/123"
+```
+
+### Run Your Site
+```bash
+hugo server -D
+```
+
+## 📖 Documentation
+
+- [Complete Specification Sheet](docs/spec-sheet.md) - Detailed design requirements
+- [Demo Site](https://your-demo-url.com) - See the theme in action
+- [Configuration Guide](#configuration) - Full customization options
 
 ## ⚙️ Configuration
 
