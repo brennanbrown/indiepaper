@@ -1,0 +1,97 @@
+{{ define "main" }}
+<div class="container">
+  <article class="h-entry">
+    <header>
+      <h1 class="p-name">{{ .Title }}</h1>
+      
+      {{ if not (eq .Type "page") }}
+      <div class="post-meta">
+        <time datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}" class="dt-published">{{ .Date.Format "January 2, 2006" }}</time>
+        {{ if .Params.updated }}
+        {{ $updated := .Params.updated | time.AsTime }}
+        <span class="meta-separator"> </span>
+        <time datetime="{{ $updated.Format "2006-01-02T15:04:05-07:00" }}" class="dt-updated meta">(updated {{ $updated.Format "January 2, 2006" }})</time>
+        {{ end }}
+        <span class="meta-separator"> </span>
+        <data value="{{ .WordCount }}">{{ .WordCount }} words</data>
+        {{ with .Params.readingTime }}
+        <span class="meta-separator"> </span>
+        <data value="{{ . }}">{{ . }} min read</data>
+        {{ end }}
+      </div>
+      
+      {{ if .Params.tags }}
+      <div class="tags">
+        {{ range .Params.tags }}
+        <a href="/tags/{{ . | urlize }}" class="tag p-category">#{{ . }}</a>
+        {{ end }}
+      </div>
+      {{ end }}
+      {{ end }}
+    </header>
+    
+    <div class="e-content">
+      {{ .Content }}
+    </div>
+    
+    {{ if .Params.cover }}
+    <footer class="post-cover">
+      <img src="{{ .Params.cover | absURL }}" alt="{{ .Title }}" class="u-photo">
+      {{ with .Params.coverCaption }}
+      <figcaption>{{ . }}</figcaption>
+      {{ end }}
+    </footer>
+    {{ end }}
+    
+    <footer class="post-meta">
+      {{ if not (eq .Type "page") }}
+      <div class="post-author">
+        <span class="meta">By <a href="{{ .Site.Params.author.url | default "/" }}" class="p-author h-card">{{ .Site.Params.author.name | default "Author" }}</a></span>
+      </div>
+      {{ end }}
+      
+      <div class="post-permalink">
+        <span class="meta">Permalink: <a href="{{ .Permalink }}" class="u-url">{{ .Permalink }}</a></span>
+      </div>
+      
+      {{ if or .Params.inReplyTo .Params.likeOf .Params.repostOf }}
+      <div class="post-context">
+        {{ if .Params.inReplyTo }}
+        <span class="meta">In reply to: <a href="{{ .Params.inReplyTo }}" class="u-in-reply-to">{{ .Params.inReplyTo }}</a></span>
+        {{ end }}
+        {{ if .Params.likeOf }}
+        <span class="meta">Like of: <a href="{{ .Params.likeOf }}" class="u-like-of">{{ .Params.likeOf }}</a></span>
+        {{ end }}
+        {{ if .Params.repostOf }}
+        <span class="meta">Repost of: <a href="{{ .Params.repostOf }}" class="u-repost-of">{{ .Params.repostOf }}</a></span>
+        {{ end }}
+      </div>
+      {{ end }}
+      
+      {{ with .Params.syndication }}
+      <div class="syndication">
+        <span class="meta">Syndicated:</span>
+        {{ range . }}
+        <a href="{{ . }}" class="u-syndication">{{ . }}</a>
+        {{ end }}
+      </div>
+      {{ end }}
+    </footer>
+  </article>
+  
+  {{ if not (eq .Type "notes") }}
+  <nav class="pagination">
+    {{ with .PrevInSection }}
+    <a href="{{ .Permalink }}" rel="prev">← {{ .Title }}</a>
+    {{ end }}
+    {{ with .NextInSection }}
+    <a href="{{ .Permalink }}" rel="next">{{ .Title }} →</a>
+    {{ end }}
+  </nav>
+  {{ end }}
+  
+  {{ if and (not (eq .Type "page")) (not (eq .Type "notes")) }}
+  {{ partial "webmentions.html" . }}
+  {{ end }}
+</div>
+{{ end }}

@@ -1,0 +1,64 @@
+{{ $endpoint := .Site.Params.indieweb.webmention_endpoint }}
+{{ $api := .Site.Params.indieweb.webmention_api }}
+{{ if $endpoint }}
+<section class="webmentions">
+  <h2>Webmentions</h2>
+  
+  {{ if $api }}
+    {{ $url := printf "%s?target=%s" $api (.Permalink | urlquery) }}
+    {{ $remote := resources.GetRemote $url }}
+    {{ if $remote }}
+      {{ $webmentions := $remote | transform.Unmarshal }}
+      {{ if and $webmentions $webmentions.children }}
+        {{ range sort $webmentions.children "published" "desc" }}
+        <article class="webmention h-cite">
+          <header>
+            {{ if .author }}
+              <span class="webmention-author p-author h-card">
+                {{ if .author.name }}
+                  {{ if .author.url }}
+                    <a href="{{ .author.url }}" class="u-url p-name">{{ .author.name }}</a>
+                  {{ else }}
+                    <span class="p-name">{{ .author.name }}</span>
+                  {{ end }}
+                {{ end }}
+              </span>
+            {{ end }}
+            
+            {{ if .url }}
+            <a href="{{ .url }}" class="u-url">
+              {{ if .published }}
+              <time datetime="{{ .published }}" class="dt-published webmention-time">
+                {{ dateFormat "January 2, 2006 at 15:04" .published }}
+              </time>
+              {{ end }}
+            </a>
+            {{ end }}
+          </header>
+          
+          <div class="webmention-content p-content">
+            {{ if .content }}
+              {{ .content.text }}
+            {{ else if .name }}
+              {{ .name }}
+            {{ end }}
+          </div>
+          
+          {{ if .photo }}
+          <figure>
+            <img src="{{ .photo }}" alt="" class="u-photo">
+          </figure>
+          {{ end }}
+        </article>
+        {{ end }}
+      {{ else }}
+        <p>No webmentions yet. <a href="{{ $endpoint }}">Send one</a>!</p>
+      {{ end }}
+    {{ else }}
+      <p><a href="{{ $endpoint }}">Send a webmention</a>.</p>
+    {{ end }}
+  {{ else }}
+    <p><a href="{{ $endpoint }}">Send a webmention</a>.</p>
+  {{ end }}
+</section>
+{{ end }}
