@@ -1,5 +1,5 @@
 name = "Indiepaper"
-license = "MIT"
+license = "AGPL-3.0"
 licenselink = "https://github.com/brennanbrown/indiepaper/blob/main/LICENSE"
 description = "A brutalist, smolweb-compliant, accessibility-first, indieweb-native Hugo theme"
 homepage = "https://github.com/brennanbrown/indiepaper"
@@ -9,7 +9,7 @@ features = ["accessibility", "indieweb", "microformats2", "semantic-html5", "wca
 
 [author]
   name = "Brennan Brown"
-  homepage = "https://brennanbrown.com"
+  homepage = "https://berryhouse.ca"
 
 [original]
   name = "Indiepaper"
