@@ -248,15 +248,14 @@ Tests include:
 
 ## License
 
-MIT License - see [LICENSE](LICENSE) for details.
+AGPL-3.0 License - see [LICENSE](LICENSE) for details.
 
 ## Contributing
 
-Contributions are welcome! Please read the [specification](docs/spec-sheet.md) for design principles and requirements.
+Contributions are welcome!
 
 ## Resources
 
-- [Specification Sheet](docs/spec-sheet.md) - Complete design requirements
 - [IndieWeb](https://indieweb.org/) - Decentralized web protocols
 - [Smolweb](https://smolweb.org/) - Minimal web principles
 - [WCAG 2.1](https://www.w3.org/WAI/WCAG21/) - Accessibility guidelines
