@@ -2,6 +2,8 @@
   publish = "public"
   command = "hugo --gc --minify"
 
+# Netlify configuration for Indiepaper demo site
+
 [build.environment]
   HUGO_VERSION = "0.148.2"
   GO_VERSION = "1.22"
