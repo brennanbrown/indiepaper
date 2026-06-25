@@ -3,10 +3,10 @@ name: Deploy Demo Site to Netlify
 on:
   push:
     branches: [ main ]
-    paths: [ 'exampleSite/**', 'layouts/**', 'static/**' ]
+    paths: [ 'exampleSite/**', 'layouts/**', 'static/**', 'theme.toml', 'hugo.toml', '*.md', '.editorconfig' ]
   pull_request:
     branches: [ main ]
-    paths: [ 'exampleSite/**', 'layouts/**', 'static/**' ]
+    paths: [ 'exampleSite/**', 'layouts/**', 'static/**', 'theme.toml', 'hugo.toml', '*.md', '.editorconfig' ]
 
 jobs:
   build:
